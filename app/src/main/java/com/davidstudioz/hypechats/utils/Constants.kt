@@ -1,41 +1,44 @@
 package com.davidstudioz.hypechats.utils
 
 object Constants {
-    const val SHARED_PREF_NAME = "hypechats_prefs"
-    const val KEY_TOKEN = "auth_token"
-    const val KEY_USER_ID = "user_id"
-    const val KEY_USER_EMAIL = "user_email"
-    const val KEY_USER_NAME = "user_name"
-    const val KEY_IS_LOGGED_IN = "is_logged_in"
+    // API Configuration
+    const val API_BASE_URL = "https://api.hypechats.com/api/"
+    const val API_TIMEOUT = 30L
+    const val API_READ_TIMEOUT = 30L
+    const val API_WRITE_TIMEOUT = 30L
     
-    const val DATABASE_NAME = "hypechats_db"
+    // Intent Extras
+    const val CHAT_ID = "chat_id"
+    const val CHAT_NAME = "chat_name"
+    const val USER_ID = "user_id"
+    const val IMAGE_PATH = "image_path"
+    const val CAMERA_FILE_PATH = "camera_file_path"
+    const val LOCATION_LAT = "location_lat"
+    const val LOCATION_LNG = "location_lng"
     
-    // API
-    const val CONNECT_TIMEOUT = 30L
-    const val READ_TIMEOUT = 30L
-    const val WRITE_TIMEOUT = 30L
+    // Shared Preferences Keys
+    const val PREFS_NAME = "HypeChatsPrefs"
+    const val USER_TOKEN = "user_token"
+    const val USER_ID_PREF = "user_id"
+    const val USER_DATA = "user_data"
+    const val IS_LOGGED_IN = "is_logged_in"
     
-    // Location
-    const val DEFAULT_ZOOM_LEVEL = 18f
-    const val MIN_LOCATION_UPDATE_DISTANCE = 10f
-    const val MIN_LOCATION_UPDATE_TIME = 1000L
-    
-    // Image
-    const val MAX_IMAGE_SIZE = 5 * 1024 * 1024
-    const val COMPRESSION_QUALITY = 85
-    
-    // Pagination
-    const val PAGE_SIZE = 20
-    
-    // Request codes
-    const val REQUEST_CAMERA = 1
-    const val REQUEST_GALLERY = 2
-    const val REQUEST_LOCATION = 3
-    const val REQUEST_PERMISSIONS = 4
-    
-    // Message types
+    // Message Types
     const val MESSAGE_TYPE_TEXT = "text"
     const val MESSAGE_TYPE_IMAGE = "image"
-    const val MESSAGE_TYPE_VIDEO = "video"
     const val MESSAGE_TYPE_LOCATION = "location"
+    const val MESSAGE_TYPE_VOICE = "voice"
+    
+    // Timing
+    const val MESSAGE_CHECK_INTERVAL = 30000L // 30 seconds
+    const val CONNECTION_RETRY_INTERVAL = 5000L // 5 seconds
+    
+    // File Paths
+    const val CACHE_IMAGE_DIR = "cache_images"
+    const val CACHE_VOICE_DIR = "cache_voice"
+    
+    // Permissions
+    const val PERMISSION_CAMERA = android.Manifest.permission.CAMERA
+    const val PERMISSION_LOCATION = android.Manifest.permission.ACCESS_FINE_LOCATION
+    const val PERMISSION_STORAGE = android.Manifest.permission.READ_EXTERNAL_STORAGE
 }
