@@ -1,0 +1,27 @@
+# Gradle
+.gradle
+/local.properties
+/.idea
+*.iml
+*.iws
+
+# Build
+build/
+.buildlog
+
+# Android
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+*.class
+*.jar
+
+# IDE
+.DS_Store
+
+# Secrets
+secrets.properties
+local.properties
+keystore.jks
